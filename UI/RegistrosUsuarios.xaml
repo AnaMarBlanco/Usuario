@@ -1,0 +1,23 @@
+﻿<Window x:Class="Usuario.UI.RegistrosUsuarios"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Usuario.UI"
+        mc:Ignorable="d"
+        Title="Registro de Usuario" Height="250" Width="360">
+    <Grid Margin="-15,0,-98,0">
+
+        <TextBox x:Name="UsuarioIdTextBox" HorizontalAlignment="Left" Margin="148,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"  Height="18" Text="{Binding UsuarioId}"/>
+        <Label x:Name="UsuarioID" Content="UsuarioID" HorizontalAlignment="Left" Margin="52,19,0,184" Width="66"/>
+        <Label x:Name="label" Content="Nombre" HorizontalAlignment="Left" Margin="58,64,0,0" VerticalAlignment="Top" Height="26" Width="54"/>
+        <TextBox x:Name="NombreTextbox"  HorizontalAlignment="Left"  Margin="150,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="18" Text="{Binding Nombre}"/>
+        <Label x:Name="label1" Content="Clave" HorizontalAlignment="Left" Margin="60,107,0,0" VerticalAlignment="Top" Height="26" Width="50"/>
+        <TextBox x:Name="ClaveTextbox" HorizontalAlignment="Left" Margin="148,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="120" Height="18" Text="{Binding Clave}"/>
+        <Button x:Name="BuscarButton" Content="Buscar" Margin="261,26,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.154,0.412"  HorizontalAlignment="Left" Width="38" Height="20" Click="BuscarButton_Click"/>
+        <Button x:Name="NuevoButton" Content="Nuevo" HorizontalAlignment="Left" Margin="260,173,0,0" VerticalAlignment="Top"  Height="20" Width="40" Click="NuevoButton_Click"/>
+        <Button x:Name="EliminarButton" Content="Eliminar" HorizontalAlignment="Left" Margin="126,173,0,0" RenderTransformOrigin="0.5,0.5" Width="48" Height="17" VerticalAlignment="Top" Click="EliminarButton_Click"/>
+        <Button x:Name="GuardarButton" Content="Guardar" HorizontalAlignment="Left" Margin="185,173,0,0" VerticalAlignment="Top" Height="20" Width="46" Click="GuardarButton_Click"/>
+
+    </Grid>
+</Window>

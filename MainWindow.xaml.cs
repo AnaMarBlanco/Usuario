@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Usuario.UI;
 
 namespace Usuario
 {
@@ -23,6 +24,12 @@ namespace Usuario
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void UsuarioItem_Click(object sender, RoutedEventArgs e)
+        {
+            RegistrosUsuarios ru = new RegistrosUsuarios();
+            ru.ShowDialog();
         }
     }
 }
